@@ -45,5 +45,5 @@ git clone https://github.com/thmjiya022/tic-tac-toe.git
 - This project is open-source and available under the MIT License.
 
 # Author
-### Thobani Mjiyakho
+- Thobani Mjiyakho
 
