@@ -1,47 +1,49 @@
 body{
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
 }
 
-.cell{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
-    background-color: #0a0a23;
-    border-color: #fff;
-    color: #fff;
-    cursor: pointer;
-}
-
-#gameContainer{
-    font-family: "Permanent Marker", cursive;
+#game-container{
     text-align: center;
 }
 
-#cellContainer{
+#game-board{
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 225px;
-    margin: auto;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
 }
 
-#restartBtn{
-    background-color: #0a0a23;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    min-height: 30px;
-    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
-    min-width: 120px;
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-#restartBtn:hover, .cell:hover{
-    background-color: #002ead;
-    transition: 0.7s;
+#status-text{
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#scoreboard{
+    margin: 10px 0;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
 }
